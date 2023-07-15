@@ -1,0 +1,20 @@
+{
+  "name": "39755-backend-18-artillery-quick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "artillery:quick": "artillery quick --count 40 --num 50 'http://localhost:8080/simple' -o simple.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "artillery": "^2.0.0-35"
+  }
+}
